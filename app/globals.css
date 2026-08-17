@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  @apply h-full;
+}
+
+[class*="cl-"] {
+  pointer-events: auto;
+}
+ 
+@layer base {
+  :root {
+    --background: 28.4 76% 95.1%; /* linen-50 */
+    --foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+
+    --card: 28.4 76% 95.1%; /* linen-50 */
+    --card-foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+ 
+    --popover: 28.4 76% 95.1%; /* linen-50 */
+    --popover-foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+ 
+    --primary: 30.9 12.9% 50%; /* stone-brown-500 */
+    --primary-foreground: 28.4 76% 95.1%; /* linen-50 */
+ 
+    --secondary: 30.8 15.3% 50%; /* khaki-beige-500 */
+    --secondary-foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+ 
+    --muted: 34.3 13.7% 90%; /* khaki-beige-100 */
+    --muted-foreground: 27.1 20.3% 30%; /* dust-grey-700 */
+ 
+    --accent: 30 15.7% 80%; /* khaki-beige-200 */
+    --accent-foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 13.7% 80%; /* stone-brown-200 */
+    --input: 30 13.7% 80%; /* stone-brown-200 */
+    --ring: 30.9 12.9% 50%; /* stone-brown-500 */
+ 
+    --radius: 0.5rem;
+
+    /* Custom colors for button variants */
+    --super: 30.2 74.9% 50%; /* linen-500 */
+    --super-foreground: 34.3 13.7% 10%; /* stone-brown-900 */
+    --ghost-foreground: 27.1 20.3% 30%; /* dust-grey-700 */
+    --sidebar: 27.3 21.6% 90%; /* dust-grey-100 */
+    --sidebar-foreground: 27.3 21.6% 10%; /* dust-grey-900 */
+    --sidebar-outline: 27.1 20.3% 70%; /* dust-grey-300 */
+  }
+ 
+  .dark {
+    --background: 30 11.1% 7.1%; /* stone-brown-950 */
+    --foreground: 28.4 76% 95.1%; /* linen-50 */
+ 
+    --card: 34.3 13.7% 10%; /* stone-brown-900 */
+    --card-foreground: 28.4 76% 95.1%; /* linen-50 */
+ 
+    --popover: 34.3 13.7% 10%; /* stone-brown-900 */
+    --popover-foreground: 28.4 76% 95.1%; /* linen-50 */
+ 
+    --primary: 30 12.7% 40%; /* stone-brown-600 */
+    --primary-foreground: 30.8 76.5% 90%; /* linen-100 */
+ 
+    --secondary: 30 14.7% 40%; /* khaki-beige-600 */
+    --secondary-foreground: 30.8 76.5% 90%; /* linen-100 */
+ 
+    --muted: 27.3 21.6% 10%; /* dust-grey-900 */
+    --muted-foreground: 27.1 20.3% 70%; /* dust-grey-300 */
+ 
+    --accent: 27 19.6% 20%; /* dust-grey-800 */
+    --accent-foreground: 28.4 76% 95.1%; /* linen-50 */
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 31.6 12.4% 30%; /* stone-brown-700 */
+    --input: 31.6 12.4% 30%; /* stone-brown-700 */
+    --ring: 30 12.7% 40%; /* stone-brown-600 */
+
+    /* Custom colors for button variants (dark theme) */
+    --super: 30 75.5% 40%; /* linen-600 */
+    --super-foreground: 30 11.1% 7.1%; /* stone-brown-950 */
+    --ghost-foreground: 27.1 20.3% 70%; /* dust-grey-300 */
+    --sidebar: 27.3 21.6% 10%; /* dust-grey-900 */
+    --sidebar-foreground: 27.3 21.6% 90%; /* dust-grey-100 */
+    --sidebar-outline: 27.1 20.3% 30%; /* dust-grey-700 */
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sentinel;
+  }
+  button, input, select, textarea, label, nav, menu {
+    @apply font-ui;
+  }
+}
+
+@layer utilities {
+  .bg-header {
+    background: var(--background);
+  }
+}
