@@ -241,6 +241,3 @@ This is the Kronika language learning application.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 ```
-#   K r o n i k a - A p p - C l o n e  
- #   K r o n i k a - A p p - C l o n e  
- 
